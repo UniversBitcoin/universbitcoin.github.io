@@ -20,6 +20,7 @@ body nav {
   background-color: #313131;
   display: block;
   padding: 20px 10px;
+  z-index: 2;
 }
 
 body nav #social {
@@ -337,6 +338,10 @@ body footer ul li a:hover {
     display: block;
     margin: 0 auto;
     width: 200px;
+    z-index: 1;
+  }
+  body main .block1 .animate__animated.animate__slideInLeft {
+    --animate-duration: 1.5s;
   }
   body main .container .grid2 {
     -webkit-column-gap: 20px;
