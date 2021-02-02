@@ -5,20 +5,33 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navbar">
+        <nav>
             <div class="left">
                 <a href="index.html" id="brand">UNIVERS BITCOIN</a>
             </div>
             <div class="right">
-                <a href="podcast.html">PODCAST</a>
-                <a href="books.html">LECTURES</a>
-                <a href="https://twitter.com/Univers_Bitcoin"><img id="twitter" src="media/Logo white.svg"></a>
-                <a href="https://www.youtube.com/channel/UCOlhr_6OnEnqV8wrbrnLZvQ"><img id="youtube" src="media/youtube.webp"></a>
+                <a href="books.html">LIBRAIRIE</a>
+                <a href="https://twitter.com/Univers_Bitcoin" target="_blank"><img class="twitterlogo" src="media/Logo white.svg"></a>
+                <a href="https://www.youtube.com/channel/UCOlhr_6OnEnqV8wrbrnLZvQ" target="_blank"><img class="youtubelogo" src="media/youtube.webp"></a>
             </div>
+            <div id="social">
+                <a href="https://twitter.com/Univers_Bitcoin"><img class="twitterlogo" src="media/Logo white.svg"></a>
+                <a href="https://www.youtube.com/channel/UCOlhr_6OnEnqV8wrbrnLZvQ"><img class="youtubelogo" src="media/youtube.webp"></a>
+            </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" class="toggler" id="toggle">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="books.html">LIBRAIRIE</a></li>
+                </ul>
+           </div>
         </nav>
         <main>
+            <div class="buffer"></div>
             <div class="block1">
                 <div class="grid1">
                     <div class="grid-item"></div>
@@ -29,17 +42,34 @@
                 <div class="grid1">
                     <div class="grid-item"></div>
                     <div class="block2">
-                        <div><img class="listen_on" src="media/spotify-podcast-badge-blk-grn-165x40.svg"></div>
-                        <div><img class="listen_on" src="media/EN_Google_Podcasts_Badge.svg"></div>
-                        <div><img class="listen_on" src="media/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg"></div>
-                        <div><img class="listen_on" src="media/en_GB-dark.png"></div> 
+                        <div><a href="https://open.spotify.com/show/0rUgTyHr9q7vkJPu4eLteP" target="_blank"><img class="listen_on" src="media/spotify-podcast-badge-blk-grn-165x40.svg"></a></div>
+                        <div><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3VuaXZlcnNiaXRjb2luL2ZlZWQueG1s?ep=14" target="_blank"><img class="listen_on" src="media/EN_Google_Podcasts_Badge.svg"></a></div>
+                        <div><a href="https://podcasts.apple.com/fr/podcast/univers-bitcoin-podcast/id1511416748" target="_blank"><img class="listen_on" src="media/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg"></a></div>
+                        <div><a href="https://www.deezer.com/fr/show/1181552" target="_blank"><img class="listen_on" src="media/en_GB-dark.png"></a></div> 
                     </div>
                 </div>
             </div>
             <div class="container">
-                <h1>Dernier épisode</h1>
-                <iframe title="Cybersécurité et hygiène numérique avec Frédéric Ocana" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/zn6wh-f86405?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=2&pfauth=&btn-skin=108"></iframe>
+                <div class="plateforms">
+                    <a href="https://open.spotify.com/show/0rUgTyHr9q7vkJPu4eLteP" target="_blank"><img class="listen_on" src="media/spotify-podcast-badge-blk-grn-165x40.svg"></a>
+                    <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3VuaXZlcnNiaXRjb2luL2ZlZWQueG1s?ep=14" target="_blank"><img class="listen_on" src="media/EN_Google_Podcasts_Badge.svg"></a>
+                    <a href="https://podcasts.apple.com/fr/podcast/univers-bitcoin-podcast/id1511416748" target="_blank"><img class="listen_on" src="media/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg"></a>
+                    <a href="https://www.deezer.com/fr/show/1181552" target="_blank"><img class="listen_on" src="media/en_GB-dark.png"></a>
+                </div>
+                <h1>Episodes</h1>
+                    <iframe src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F8120761%2Fplaylist_multi.xml&amp;vjs=1&amp;size=430&amp;skin=4&amp;episode_list_bg=%23ffffff&amp;bg_left=%23313131&amp;bg_mid=%23313131&amp;bg_right=%23313131&amp;podcast_title_color=%23EEEEEE&amp;episode_title_color=%23EEEEEE&amp;auto=0&amp;share=0&amp;fonts=Helvetica&amp;download=0&amp;rtl=0&amp;show_playlist_recent_number=100" title="Univers Bitcoin Podcast" width="100%" height="430" scrolling="no" style="border: none;"></iframe>
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <h1>Suivez-nous</h1>
+                <ul>
+                    <li><a href="https://twitter.com/Univers_Bitcoin" target="_blank">Twitter</a></li>
+                    <li><a href="https://twitter.com/Univers_Bitcoin" target="_blank"><img class="twitterlogo" src="media/Logo white.svg"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCOlhr_6OnEnqV8wrbrnLZvQ" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCOlhr_6OnEnqV8wrbrnLZvQ" target="_blank"><img class="youtubelogo" src="media/yt_badge.png"></a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,64 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins&family=Source+Code+Pro&display=swap");
-@font-face {
-  font-family: "MrRobot";
-  src: url("C:/Users/Neb/Documents/Fonts/Mrrobot-g123.ttf");
-  font-family: "Arcade Rounded";
-  src: url("C:/Users/Neb/Documents/Fonts/ArcadeRounded-3DM.ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 body {
   background-color: #525252;
-  font-family: 'Monserrat', sans-serif;
   color: #eeeeee;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .twitterlogo {
+  height: 20px;
+  padding-right: 30px;
+}
+
+body .youtubelogo {
+  height: 30px;
 }
 
 body nav {
+  font-family: 'Monserrat', sans-serif;
   background-color: #313131;
-  color: white;
+  display: block;
+  padding: 10px;
 }
 
-body nav .left {
-  float: left;
+body nav #social {
+  display: inline;
+  position: absolute;
+  top: 35px;
+  right: 30px;
 }
 
-body nav .left a {
-  color: white;
+body nav a {
+  color: #eeeeee;
 }
 
-body nav .left a:hover {
+body nav a:hover {
   text-decoration: none;
+  color: #eeeeee;
 }
 
-body nav .left #brand {
-  font-family: 'MrRobot';
+body nav label {
+  font-size: 50px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+body nav #brand {
+  font-family: 'Orbitron', sans-serif;
   font-size: 30px;
 }
 
 body nav .right {
-  float: right;
+  display: none;
 }
 
-body nav .right a {
-  color: white;
-  padding: 0px 15px;
+body nav .left {
+  display: none;
 }
 
-body nav .right a #twitter {
-  height: 20px;
+body nav .menu {
+  display: none;
+  text-align: left;
 }
 
-body nav .right a #youtube {
-  height: 30px;
+body nav .menu ul {
+  padding: 0px;
+  margin: 0px;
 }
 
-body nav .right a:hover {
-  text-decoration: none;
+body nav .menu ul li {
+  list-style: none;
+  line-height: 40px;
+}
+
+body nav .menu ul a:hover {
+  color: #eeeeee;
+}
+
+body nav #toggle {
+  display: none;
+}
+
+body nav #toggle:checked ~ .menu {
+  display: block;
 }
 
 body main {
-  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+}
+
+body main .buffer {
+  display: none;
 }
 
 body main .block1 {
@@ -66,57 +98,58 @@ body main .block1 {
   background-size: cover;
   background-position: bottom;
   width: 100%;
-  height: 600px;
+  height: 200px;
   text-align: center;
 }
 
 body main .block1 .grid1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 70%;
-      grid-template-columns: auto 70%;
+  -ms-grid-columns: auto 75%;
+      grid-template-columns: auto 75%;
 }
 
 body main .block1 #slogan {
-  padding: 100px 30px 0px 30px;
-  font-size: 40px;
-  line-height: 50px;
-}
-
-body main .block1 #youtube {
-  size: 200%;
+  padding: 40px 30px 0px 30px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 body main .block1 .block2 {
-  padding-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  display: none;
 }
 
-body main .block1 .block2 .listen_on {
-  height: 50px;
+body main .block4 {
+  background-image: url("media/Pod_Mic.jpg");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 200px;
+}
+
+body main .block4 h1 {
+  padding: 75px 0px 0px 30px;
 }
 
 body main .container {
-  padding: 30px;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body main .container .plateforms {
+  width: 100%;
+  text-align: center;
+}
+
+body main .container .plateforms .listen_on {
+  width: 250px;
+  padding: 10px;
 }
 
 body main .container h1 {
-  padding-bottom: 20px;
-}
-
-body main .container iframe {
-  background-color: #525252;
+  padding: 21px 10px 20px 10px;
+  font-size: 35px;
 }
 
 body main .container .grid2 {
@@ -124,12 +157,13 @@ body main .container .grid2 {
   display: grid;
   -ms-grid-columns: 30% 50% 20%;
       grid-template-columns: 30% 50% 20%;
-  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  font-size: 10px;
 }
 
 body main .container .grid2 .title {
-  padding-bottom: 25px;
-  font-size: 30px;
+  font-size: 12px;
 }
 
 body main .container .grid2 a {
@@ -150,5 +184,151 @@ body main .block3 {
 
 body main .block3 h1 {
   padding: 75px 0px 0px 30px;
+}
+
+body footer {
+  text-align: center;
+  width: 100%;
+  background-color: #313131;
+  padding: 15px 0px;
+}
+
+body footer h1 {
+  padding-bottom: 10px;
+}
+
+body footer ul {
+  margin: 0;
+}
+
+body footer ul li {
+  display: inline;
+  margin: 0;
+  padding-right: 10px;
+}
+
+body footer ul li a {
+  color: #eeeeee;
+}
+
+body footer ul li a:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body main .block1 {
+    height: 400px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  body main .block1 .grid1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 70%;
+        grid-template-columns: auto 70%;
+  }
+  body main .block1 #slogan {
+    padding: 40px 30px 0px 30px;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  body main .block1 .block2 {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+  body main .block1 .block2 .listen_on {
+    height: 50px;
+  }
+  body main .plateforms {
+    display: none;
+  }
+  body main .container .grid2 {
+    -ms-grid-columns: 30% 55% 15%;
+        grid-template-columns: 30% 55% 15%;
+    font-size: 20px;
+  }
+  body main .container .grid2 .title {
+    font-size: 25px;
+  }
+  body main .block4 {
+    background-image: url("media/pod_mic_rev.jpeg");
+    background-position: center;
+    height: 400px;
+  }
+  body main .block4 h1 {
+    padding: 175px 0px 0px 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body nav {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+  }
+  body nav #toggle {
+    display: none;
+  }
+  body nav #social {
+    display: none;
+  }
+  body nav label {
+    display: none;
+  }
+  body nav .left {
+    display: inline-block;
+    float: left;
+  }
+  body nav .right {
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+  }
+  body nav .right a {
+    padding-right: 20px;
+  }
+  body nav .right a .twitterlogo {
+    padding: 0px;
+  }
+  body main .buffer {
+    display: block;
+    height: 65px;
+  }
+  body main .block1 {
+    height: 600px;
+  }
+  body main .block1 .grid1 {
+    -ms-grid-columns: auto 70%;
+        grid-template-columns: auto 70%;
+  }
+  body main .block1 #slogan {
+    padding: 100px 30px 0px 30px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  body main .block1 .block2 {
+    padding-top: 100px;
+  }
+  body main .container .grid2 {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  body main .container .grid2 .title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

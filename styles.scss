@@ -1,120 +1,163 @@
-@font-face {
-    font-family: "MrRobot";
-    src: url("C:/Users/Neb/Documents/Fonts/Mrrobot-g123.ttf");
-    font-family: "Arcade Rounded";
-    src: url("C:/Users/Neb/Documents/Fonts/ArcadeRounded-3DM.ttf");
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 
 
 body {
     background-color: #525252;
-    font-family: 'Monserrat', sans-serif;
     color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+
+    .twitterlogo {
+        height: 20px;
+        padding-right: 30px;
+    }
+
+    .youtubelogo {
+        height: 30px;
+    }
+
     nav {
+        font-family: 'Monserrat', sans-serif;
         background-color: #313131;
-        color: white;
+        display: block;
+        padding: 10px;
+
+        #social {
+            display: inline;
+            position: absolute;
+            top: 35px;
+            right: 30px;
+        }
+
+        a {
+            color: #eeeeee;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #eeeeee;
+        }
+
+        label {
+            font-size: 50px;
+            cursor: pointer;
+            margin: 0px;
+        }        
+        
+        #brand {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 30px;
+        }
+
+        .right {
+            display: none;
+        }
+
         .left {
-            float: left;
-            a {
-                color: white;
-            }
+            display: none;
+        }
 
-            a:hover {
-                text-decoration: none;
-            }
+        .menu {
+            display: none;
+            text-align: left;
 
-            #brand {
-                font-family: 'MrRobot';
-                font-size: 30px;
+            ul {
+                padding: 0px;
+                margin: 0px;
+    
+                li {
+                    list-style: none;
+                    line-height: 40px;
+                }
+
+                a:hover {
+                    color: #eeeeee;
+                }
             }
         }
+
+        #toggle {
+            display: none;
+        }
+
+        #toggle:checked ~ .menu {
+            display: block;
+        }
+    }
+
+    main {    
+        padding-bottom: 30px;;
         
-        .right {
-            float: right;
-            a {
-                color: white;
-                padding: 0px 15px;
-
-                #twitter {
-                    height: 20px;
-                }
-
-                #youtube {
-                    height: 30px;
-                }
-
-            }
-            a:hover {
-                text-decoration: none;
-            }        
-        } 
-
-     }
-
-    main {
-        font-family: 'Poppins', sans-serif;
+        .buffer {
+            display: none;
+        }
 
         .block1 {
             background-image: url("media/AdobeStock_382077919.jpeg");
             background-size: cover;
             background-position: bottom;
             width: 100%;
-            height: 600px;
+            height: 200px;
             text-align: center;
 
             .grid1 {
                 display: grid;
-                grid-template-columns: auto 70%;
+                grid-template-columns: auto 75%;
             }
 
             #slogan {
-                padding: 100px 30px 0px 30px;
-                font-size : 40px;
-                line-height: 50px;
-            }
-
-            #youtube {
-                size: 200%;
+                padding: 40px 30px 0px 30px;
+                font-size : 15px;
+                line-height: 25px;
             }
 
             .block2 {
-                padding-top: 100px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                grid-column-gap: 20px;
-                grid-row-gap: 20px;
-                grid-template-columns: 25% 25% 25% 25%;
+                display: none;
+            }
+        }
+
+        .block4 {
+            background-image: url("media/Pod_Mic.jpg");
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 200px;
+
+            h1 {
+                padding: 75px 0px 0px 30px;
+            }
+        }
+
+        .container {
+            padding: 15px;
+            margin: 0 auto;
+            width: 100%;
+
+            .plateforms {
+                width: 100%;;
+                text-align: center;
 
                 .listen_on {
-                    height: 50px;
+                    width: 250px;
+                    padding :10px;
                 }
-            }            
-        }
-        
-        .container {
-            padding: 30px;
+            }
             
             h1 {
-                padding-bottom: 20px;
-            }
-
-            iframe {
-                background-color: #525252;
+                padding: 21px 10px 20px 10px;
+                font-size: 35px;
             }
 
             .grid2 {
                 display: grid;
                 grid-template-columns : 30% 50% 20%;
-                grid-row-gap: 20px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                font-size: 10px;
 
                 .title {
-                    padding-bottom: 25px;
-                    font-size: 30px;
+                    font-size: 12px;
                 }
 
                 a {
@@ -135,9 +178,174 @@ body {
             height: 200px;
 
             h1 {
-                padding: 75px 0px 0px 30px;;
+                padding: 75px 0px 0px 30px;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+        background-color: #313131;
+        padding: 15px 0px;
+
+        h1 {
+            padding-bottom: 10px;;
+        }
+
+        ul {
+            margin: 0;
+
+            li {
+                display: inline;
+                margin: 0;
+                padding-right: 10px;
+
+                a {
+                    color: #eeeeee
+                }
+
+                a:hover {
+                    color: #eeeeee;
+                    text-decoration: none;
+                }
+            }
+        }
+            
+    }
+
+    @media only screen and (min-width: 768px) {
+        main {    
+            .block1 {
+                height: 400px;
+                text-align: center;
+                margin-top: 0px;
+    
+                .grid1 {
+                    display: grid;
+                    grid-template-columns: auto 70%;
+                }
+    
+                #slogan {
+                    padding: 40px 30px 0px 30px;
+                    font-size : 30px;
+                    line-height: 50px;
+                }
+    
+                .block2 {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;
+                    grid-template-columns: 25% 25% 25% 25%;
+    
+                    .listen_on {
+                        height: 50px;
+                    }
+                }
+            }
+            
+            .plateforms {
+                display: none;
+            }
+
+            .container {    
+                .grid2 {
+                    grid-template-columns : 30% 55% 15%;
+                    font-size: 20px;
+    
+                    .title {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .block4 {
+                background-image: url("media/pod_mic_rev.jpeg");
+                background-position: center;
+                height: 400px;
+    
+                h1 {
+                    padding: 175px 0px 0px 30px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        nav {    
+            display: inline-block;
+            width: 100%;
+            margin-top: 0px;
+            position: fixed;
+            
+            #toggle {
+                display: none;
+            }
+
+            #social {
+                display: none;
+            }
+
+            label {
+                display: none;
+            }
+            
+            .left {
+                display: inline-block;
+                float: left;
+            }
+            
+            .right {
+                display: inline-block;
+                float: right;
+                padding-top: 10px;
+                a {
+                    padding-right: 20px;
+    
+                    .twitterlogo {
+                        padding: 0px;
+                    }
+                }
+            } 
+        }
+    
+        main {
+            .buffer {
+                display: block;
+                height: 65px;
+            }
+            
+            .block1 {
+                height: 600px;
+    
+                .grid1 {
+                    grid-template-columns: auto 70%;
+                }
+    
+                #slogan {
+                    padding: 100px 30px 0px 30px;
+                    font-size : 40px;
+                    line-height: 50px;
+                }
+    
+                .block2 {
+                    padding-top: 100px;
+                }       
+            }
+
+            .container {    
+                .grid2 {
+                    column-gap: 20px;
+    
+                    .title {
+                        font-size: 30px;
+                        padding-bottom: 20px;
+                    }
+                }
             }
         }
     }
 }
- 
