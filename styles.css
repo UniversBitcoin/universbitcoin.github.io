@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 body {
   background-color: #525252;
   color: #eeeeee;
@@ -46,8 +46,8 @@ body nav label {
 }
 
 body nav #brand {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 40px;
 }
 
 body nav .right {
@@ -295,7 +295,7 @@ body footer ul li a:hover {
   body nav .right {
     display: inline-block;
     float: right;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   body nav .right a {
     padding-right: 20px;
