@@ -16,10 +16,9 @@ body .youtubelogo {
 }
 
 body nav {
-  font-family: 'Monserrat', sans-serif;
   background-color: #313131;
   display: block;
-  padding: 20px 10px;
+  padding: 10px 10px;
   z-index: 2;
 }
 
@@ -51,6 +50,7 @@ body nav #brand {
 
 body nav .right {
   display: none;
+  font-size: 20px;
 }
 
 body nav .left {
@@ -289,6 +289,7 @@ body footer ul li a:hover {
     width: 100%;
     margin-top: 0px;
     position: fixed;
+    padding: 20px 10px;
   }
   body nav #toggle {
     display: none;
