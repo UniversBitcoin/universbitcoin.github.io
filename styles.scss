@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap');
+@import url('https://fr.allfont.net/allfont.css?fonts=arcade-rounded');
 
 body {
     background-color: #525252;
@@ -16,6 +17,7 @@ body {
     }
 
     nav {
+        font-size: 12px;
         background-color: #313131;
         display: block;
         padding: 10px 10px;
@@ -105,8 +107,9 @@ body {
             }
 
             #slogan {
+                font-family: 'Arcade Rounded', arial;
                 padding: 40px 30px 0px 30px;
-                font-size : 15px;
+                font-size : 10px;
                 line-height: 25px;
             }
 
@@ -238,7 +241,7 @@ body {
     
                 #slogan {
                     padding: 40px 30px 0px 30px;
-                    font-size : 30px;
+                    font-size : 12px;
                     line-height: 50px;
                 }
     
@@ -338,7 +341,7 @@ body {
     
                 #slogan {
                     padding: 100px 30px 0px 30px;
-                    font-size : 40px;
+                    font-size : 20px;
                     line-height: 50px;
                 }
     
