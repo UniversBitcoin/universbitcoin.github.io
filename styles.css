@@ -4,7 +4,7 @@
 body {
   background-color: #525252;
   color: #eeeeee;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body .twitterlogo {
@@ -94,6 +94,17 @@ body main .buffer {
   display: none;
 }
 
+body main .partners h1 {
+  text-align: center;
+}
+
+body main .partners .bar {
+  padding-top: 2px;
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  width: 50%;
+}
+
 body main .block1 {
   background-image: url("media/home.jpeg");
   background-size: cover;
@@ -111,7 +122,7 @@ body main .block1 .grid1 {
 }
 
 body main .block1 #slogan {
-  font-family: 'Arcade Rounded', arial;
+  font-family: "Arcade Rounded", arial;
   padding: 40px 30px 0px 30px;
   font-size: 10px;
   line-height: 25px;
@@ -153,8 +164,37 @@ body main .container .plateforms .listen_on {
   padding: 10px;
 }
 
+body main .container .partners {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+body main .container .partnerlogos {
+  display: block;
+}
+
+body main .container .partnerlogos .box {
+  padding: 15px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  height: 75px;
+  margin-top: 30px;
+}
+
+body main .container .partnerlogos .box #ledgerlogo {
+  max-width: 200px;
+}
+
+body main .container .partnerlogos .box #paymiumlogo {
+  max-width: 200px;
+}
+
 body main .container h1 {
-  padding: 21px 10px 20px 10px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
   font-size: 35px;
 }
 
@@ -320,7 +360,7 @@ body footer ul li a:hover {
   }
   body main .buffer {
     display: block;
-    height: 65px;
+    height: 80px;
   }
   body main .block1 {
     height: 600px;
@@ -354,6 +394,58 @@ body footer ul li a:hover {
   body main .container .grid2 .title {
     font-size: 30px;
     padding-bottom: 20px;
+  }
+  body main .container h1 {
+    text-align: left;
+  }
+  body main .container .partners {
+    width: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  body main .container .partners h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  body main .container .partners .bar {
+    padding-top: 2px;
+    border-bottom: 1px solid;
+    margin: 0 auto;
+    width: 50%;
+  }
+  body main .container .partners .partnerlogos {
+    width: 100%;
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .container .partners .partnerlogos .box {
+    padding: 15px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 15px;
+    background-color: white;
+    height: 100px;
+  }
+  body main .container .partners .partnerlogos .box #ledgerlogo {
+    max-width: 300px;
+  }
+  body main .container .partners .partnerlogos .box #paymiumlogo {
+    max-width: 300px;
+  }
+  body main .container .partners .partnerlogos .box:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=styles.css.map */
